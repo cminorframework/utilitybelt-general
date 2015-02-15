@@ -3,6 +3,7 @@
 .buildpath
 .project
 .DS_STORE
+composer.lock
 
 /vendor/
 tests/_output/*
