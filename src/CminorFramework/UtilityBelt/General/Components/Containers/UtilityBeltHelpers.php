@@ -46,6 +46,12 @@ class UtilityBeltHelpers
         return $this->service_provider->get('CminorFramework\UtilityBelt\General\Contracts\Html\IHtmlHelper');
     }
 
+    public function getSymbolHelper()
+    {
+        return $this->service_provider->get('CminorFramework\UtilityBelt\General\Contracts\Symbol\ISymbolHelper');
+
+    }
+
 
     public function getTextHelper()
     {
