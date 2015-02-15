@@ -1,0 +1,8 @@
+.vendor
+.settings
+.project
+.DS_STORE
+
+/vendor/
+tests/_output/*
+tests/_output/*
