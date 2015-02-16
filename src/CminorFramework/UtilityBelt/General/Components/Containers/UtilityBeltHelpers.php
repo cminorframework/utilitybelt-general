@@ -64,6 +64,14 @@ class UtilityBeltHelpers
     }
 
     /**
+     * @return \CminorFramework\UtilityBelt\General\Contracts\Html\IHtmlWrapper
+     */
+    public function getHtmlWrapper()
+    {
+        return $this->service_provider->get('CminorFramework\UtilityBelt\General\Contracts\Html\IHtmlWrapper');
+    }
+
+    /**
      * Returns the output helper
      * @since 0.2
      * @return \CminorFramework\UtilityBelt\General\Helpers\Output\OutputHelper
