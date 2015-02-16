@@ -1,7 +1,8 @@
 <?php
 namespace CminorFramework\UtilityBelt\General\Components\Html;
 
-class HtmlWrapper
+use CminorFramework\UtilityBelt\General\Contracts\Html\IHtmlWrapper;
+class HtmlWrapper implements IHtmlWrapper
 {
 
     protected $data;
