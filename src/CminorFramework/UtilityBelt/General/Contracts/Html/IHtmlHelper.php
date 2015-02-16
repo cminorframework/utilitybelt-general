@@ -25,4 +25,13 @@ interface IHtmlHelper
      */
     public function createSelectboxElement();
 
+    /**
+     * Wraps text inside an html element with class
+     * @param string $item
+     * @param string $html_element
+     * @param string $css_class
+     * @return string
+     */
+    public function wrapItemInHtmlElement($item, $html_element, $css_class = null);
+
 }
