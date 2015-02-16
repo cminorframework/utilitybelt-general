@@ -55,14 +55,12 @@ class UtilityBeltHelpers
 
     }
 
-
+    /**
+     * @return \CminorFramework\UtilityBelt\General\Contracts\Text\ITextHelper
+     */
     public function getTextHelper()
     {
-        if(!isset($this->text_helper)){
-            $this->text_helper = new TextHelper();
-        }
-
-        return $this->text_helper;
+        return $this->service_provider->get('CminorFramework\UtilityBelt\General\Contracts\Text\ITextHelper');
     }
 
     /**

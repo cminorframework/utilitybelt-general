@@ -30,6 +30,7 @@ class GeneralUtilityBeltServiceProvider extends Container implements IGeneralUti
         $this->bind('CminorFramework\UtilityBelt\General\Contracts\URI\IURIHelper', 'CminorFramework\UtilityBelt\General\Components\URI\DecoratedPost', true);
         $this->bind('CminorFramework\UtilityBelt\General\Contracts\Text\ITextHelper', 'CminorFramework\UtilityBelt\General\Components\Text\TextHelper', true);
         $this->bind('CminorFramework\UtilityBelt\General\Contracts\Symbol\ISymbolHelper', 'CminorFramework\UtilityBelt\General\Components\Symbol\SymbolHelper', true);
+
     }
 
 
