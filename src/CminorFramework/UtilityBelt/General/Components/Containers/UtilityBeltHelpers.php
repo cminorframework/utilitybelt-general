@@ -52,7 +52,6 @@ class UtilityBeltHelpers
     public function getSymbolHelper()
     {
         return $this->service_provider->get('CminorFramework\UtilityBelt\General\Contracts\Symbol\ISymbolHelper');
-
     }
 
     /**
@@ -74,32 +73,21 @@ class UtilityBeltHelpers
     /**
      * Returns the output helper
      * @since 0.2
-     * @return \CminorFramework\UtilityBelt\General\Helpers\Output\OutputHelper
+     * @return \CminorFramework\UtilityBelt\General\Contracts\Output\IOutputHelper
      */
     public function getOutputHelper()
     {
-
-        if ( ! isset( $this->output_helper ) ) {
-            $this->output_helper = new OutputHelper();
-        }
-        return $this->output_helper;
-
+        return $this->service_provider->get('CminorFramework\UtilityBelt\General\Contracts\Output\IOutputHelper');
     }
 
     /**
      * Returns the URI helper
      * @since 0.2
-     * @return \CminorFramework\UtilityBelt\General\Helpers\URI\URIHelper
+     * @return \CminorFramework\UtilityBelt\General\Contracts\URI\IURIHelper
      */
     public function getURIHelper()
     {
-
-        if ( ! isset( $this->uri_helper ) ) {
-            $this->uri_helper = new URIHelper();
-        }
-
-        return $this->uri_helper;
-
+        return $this->service_provider->get('CminorFramework\UtilityBelt\General\Contracts\URI\IURIHelper');
     }
 
 

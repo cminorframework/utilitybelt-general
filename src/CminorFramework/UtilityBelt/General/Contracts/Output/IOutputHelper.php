@@ -1,7 +1,6 @@
 <?php
-namespace CminorFramework\UtilityBelt\General\Components\Output;
+namespace CminorFramework\UtilityBelt\General\Contracts\Output;
 
-use CminorFramework\UtilityBelt\General\Contracts\Output\IOutputHelper;
 /**
  * Provides output helper functions
  *
@@ -13,7 +12,7 @@ use CminorFramework\UtilityBelt\General\Contracts\Output\IOutputHelper;
  * @link http://soundcloud.com/cminor, https://github.com/dpsarrou
  *
  */
-class OutputHelper implements IOutputHelper
+interface IOutputHelper
 {
 
     /**
@@ -21,12 +20,7 @@ class OutputHelper implements IOutputHelper
      * @since 0.1
      * @param string $element
      */
-	public static function precho($element)
-	{
-		echo "<pre>";
-		print_r($element);
-		echo "</pre>";
-	}
+	public static function precho($element);
 
 
 }
