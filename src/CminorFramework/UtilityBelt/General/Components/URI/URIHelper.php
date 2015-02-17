@@ -1,5 +1,5 @@
 <?php
-namespace CminorFramework\UtilityBelt\General\Helpers\URI;
+namespace CminorFramework\UtilityBelt\General\Components\URI;
 
 /**
  *
