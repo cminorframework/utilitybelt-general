@@ -63,5 +63,28 @@ class HtmlHelper implements IHtmlHelper
         return $selectbox_element;
     }
 
+    /**
+     * Wraps text inside an html element with css class
+     * @param string $item
+     * @param string $html_element
+     * @param string $css_class
+     * @return string
+     */
+    public function wrapItemInHtmlElement($item, $html_element, $css_class = null)
+    {
+
+        if($css_class){
+            $string = '<%s class="%s">%s</%s>';
+            return sprintf($string, $html_element, $css_class, $item, $html_element);
+        }
+        else{
+
+            $string = '<%s>%s</%s>';
+            return sprintf($string, $html_element, $item, $html_element);
+
+        }
+
+    }
+
 
 }

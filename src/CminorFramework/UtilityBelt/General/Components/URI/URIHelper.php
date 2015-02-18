@@ -1,6 +1,7 @@
 <?php
-namespace CminorFramework\UtilityBelt\General\Helpers\URI;
+namespace CminorFramework\UtilityBelt\General\Components\URI;
 
+use CminorFramework\UtilityBelt\General\Contracts\URI\IURIHelper;
 /**
  *
  * URI helper class to mess with URIs and URLs
@@ -13,7 +14,7 @@ namespace CminorFramework\UtilityBelt\General\Helpers\URI;
  * @link http://soundcloud.com/cminor, https://github.com/dpsarrou
  *
  */
-class URIHelper
+class URIHelper implements IURIHelper
 {
 
     /**

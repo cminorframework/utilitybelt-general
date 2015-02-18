@@ -1,6 +1,7 @@
 <?php
-namespace CminorFramework\UtilityBelt\General\Helpers\Text;
+namespace CminorFramework\UtilityBelt\General\Components\Text;
 
+use CminorFramework\UtilityBelt\General\Contracts\Text\ITextHelper;
 /**
  * Helper class to provide helpful text functions
  *
@@ -9,7 +10,7 @@ namespace CminorFramework\UtilityBelt\General\Helpers\Text;
  * @link http://soundcloud.com/cminor, https://github.com/dpsarrou
  *
  */
-class TextHelper
+class TextHelper implements ITextHelper
 {
 
     /**
