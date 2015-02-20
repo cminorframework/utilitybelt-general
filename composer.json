@@ -10,7 +10,8 @@
     ],
     "minimum-stability": "dev",
     "require": {
-    	"illuminate/container":"*"
+    	"illuminate/container":"*",
+    	"mobiledetect/mobiledetectlib": "dev-master"
     },
     "autoload": {
         "psr-4": {

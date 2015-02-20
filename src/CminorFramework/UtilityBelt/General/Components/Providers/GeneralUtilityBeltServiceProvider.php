@@ -33,7 +33,7 @@ class GeneralUtilityBeltServiceProvider extends Container implements IGeneralUti
         $this->bind('CminorFramework\UtilityBelt\General\Contracts\Symbol\ISymbolHelper', 'CminorFramework\UtilityBelt\General\Components\Symbol\SymbolHelper', true);
         $this->bind('CminorFramework\UtilityBelt\General\Contracts\URI\IURIHelper', 'CminorFramework\UtilityBelt\General\Components\URI\URIHelper', true);
         $this->bind('CminorFramework\UtilityBelt\General\Contracts\Output\IOutputHelper', 'CminorFramework\UtilityBelt\General\Components\Output\IOutputHelper', true);
-
+        $this->bind('CminorFramework\UtilityBelt\General\Contracts\UserAgent\IUserAgentHelper', '\CminorFramework\UtilityBelt\General\Components\UserAgent\UserAgentHelper', true);
     }
 
 

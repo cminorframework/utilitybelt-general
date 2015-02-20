@@ -90,6 +90,15 @@ class UtilityBeltHelpers
         return $this->service_provider->get('CminorFramework\UtilityBelt\General\Contracts\URI\IURIHelper');
     }
 
+    /**
+     * Returns the user agent helper
+     * @return \CminorFramework\UtilityBelt\General\Contracts\UserAgent\IUserAgentHelper
+     */
+    public function getUserAgentHelper()
+    {
+        return $this->service_provider->get('CminorFramework\UtilityBelt\General\Contracts\UserAgent\IUserAgentHelper');
+    }
+
 
 
 }
