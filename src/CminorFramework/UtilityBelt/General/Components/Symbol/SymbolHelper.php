@@ -1,7 +1,8 @@
 <?php
 namespace CminorFramework\UtilityBelt\General\Components\Symbol;
 
-class SymbolHelper
+use CminorFramework\UtilityBelt\General\Contracts\Symbol\ISymbolHelper;
+class SymbolHelper implements ISymbolHelper
 {
 
     public function issetOrNull($variable, $default = null)
